@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Redesigning Amazon.com
+    </title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+        <nav>
+            <a href="#" class="hide-desktop">
+                <img src="images/hammenu.png" alt="hamburgermenu"  class="menu" id="menu">
+            </a> 
+            <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.png" alt="exit menu"></li>
+                    <li><a href="index.html">WORKS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+     <div class="grid-container">
+
+        <div class="sidebar-left"></div>
+        <div class="sidebar-right"></div>
+
+        <div class="main-content">
+            
+            <h1>Redesigning the mobile app that Amazon deserves</h1>
+                <div class="img-container">
+                <img src="images/amazon.png" alt="amazon image" class="img">
+            </div>
+            <div class="study">
+
+                <div class="overview">
+                    <h3>Overview</h3>
+                    <p>In this digital era, purchasing goods and services online has become a common practice for many people. People shop online in their favorite physical stores, like Macy’s, Nordstrom, and Sephora, but also shop with online retailers, like Amazon, Ebay, and Etsy. Among all, Amazon is the largest internet retail company in the world, and they have a mobile application to bring their whole site to the tip of your fingers.
+                        <br><br>
+                        As someone that shops on Amazon <i>religiously</i>, I’ve ventured into probably every feature on the app. Despite the fact, I still had trouble navigating to certain features and had frustrating experiences browsing for items. After observing that other people had issues with the app too, I pursued this redesign as an opportunity to improve user experience and further my skills as a designer.
+                    <br><br>
+                    <b>Problem:</b>
+                    <br> 
+                    <ul>
+                        <li>Many users struggle with navigation within the app and have difficulty accessing features they normally would find on the web. </li>
+                    </ul>
+                        <br>
+                    <p><b>Goals:</b>
+                        <br>
+                        <ul>
+                            <li>To design a more intuitive and clean interface to improve user experience</li>
+                            <li>Improve discoverability and accessibility for commonly used features</li>
+                            <li>Allow users to browse and search for items with ease, as they would on the web.</li>
+                        </ul>
+                        <br><br><br>
+                        <i>Side note: The views from this case study are strictly my own and I am not suggesting that Amazon should adopt my redesign over their current one. This was a project born out of my own desire to further my skills as a designer.  In addition, I do not have access to the data that designers at Amazon do, which may affect the design decisions that were made.</i>
+                    
+                </div>
+            <div class="img-container">
+            <img src="images/MyDesignProcess.png" alt="design process" class="full-img">
+            </div>
+            
+
+            <div class="empathize">
+                <div class="img-container">
+                    <img src="images/phase1.png" alt="phase 1" class="phase-img">
+                </div>
+                    <h3>Emphathize</h3>
+                    <h4><i>Learning about the audience</i></h4>
+                    <p>As someone who uses Amazon obsessively to research and buy almost all my products, I already had a few ideas in my head of what I wish could be improved in the app. But I’m not the only user, right? 
+                        <br><br>
+                        I went through <b>user reviews</b> in the <b>iOS App Store</b> as well as the <b>Google Play Store</b> to understand the current <b>user satisfaction</b> of Amazon’s mobile application. After hundreds of reviews, I wanted more information on <i>specific features, user goals, and pain points</i>...so I <b>interviewed</b> and <b>surveyed</b> a total of <b>157</b> people.
+                        <br><br></p>
+                        <table style="width:100%">
+                            <tr>
+                              <th>Method</th>
+                              <th>Findings</th>
+                            </tr>
+                            <tr>
+                              <td>Personal Experience</td>
+                              <td>
+                                  <ul>
+                                    <li>There is no way to go back to the top of the page in
+                                    searches</li>
+                                    <li>Customer images are not scrollable, which makes it
+                                        difficult and frustrating to browse</li>
+                                    <li>Dark theme needed to reduce eye strain</li>
+                                    <li>Most used features should go at the bottom, on a
+                                    navigation bar</li>
+                                    </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>User Reviews</td>
+                              <td>
+                                <ul>
+                                    <li>Filter is hard to use and you can only apply one filter at a time, making it frustrating to use</li>
+                                    <li>Need dark theme!</li>
+                                    <li>Comparing items should be easier</li>
+                                    <li>“I want to compare the items I pick, not the ones
+                                        recommended to me”</li>
+                                    <li>Wishlist is difficult to get to after the update- bring
+                                        back Drag&Drop</li>
+                                    <li>Changing windows resets everything, which makes it frustrating</li>
+                                    <li>There are only a few items on each page, requiring
+                                        user to click through multiple pages to browse items</li>
+                                    <li> Needs to be more similar to desktop version!</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                                <td>Surveys/Interviews of 157 people</td>
+                                <td>
+                                    <ul>
+                                        <li>More than half of the users(​ 56.7%)​ ​already know what they want when they open the app. The rest are there to browse and compare prices.</li>
+                                        <li>Almost all ​(93.6%) respondents said they d​ o not​ ​use the C​amera/Photo search feature</li>
+                                        <li>Majority​ (74.5%) of respondents said they​ ALWAYS check reviews ​when viewing a product, while 17.8% said they​ often check reviews​ (9​2.3% of total respondents check reviews!​)</li>
+                                        <li>Around half ​(54.1%) say it is e​asy to navigate customer images​ under reviews (​Is that satisfactory?)​</li>
+                                        <li>What people like​ most about the app: CONVENIENCE</li>
+                                        <li>“What do you dislike about the app? Is there anything on the app you find frustrating that you wish was easier/different?”</li>
+                                            <ul>
+                                                <li>Navigation needs to be easier</li>
+                                                <li>Home page​ is too ​cluttered</li>
+                                                <li>Adding items to wishlist​ and s​ haring ​product
+                                                    is d​ifficult</li>
+                                                <li>DARK MODE PLEASE!</li>
+                                                <li>Not enough products listed​ per page</li>
+                                                <li>Filtering​ is​ inconvenient​ and ​unusable</li>
+                                                <li>Reviews and product information​ are b​uried
+                                                    too far down the page</li>
+                                                <li>Comparing items​ should be e​asier</li>  
+                                            </ul>
+                                  
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Competitive Analysis</td>
+                                <td>
+                                    <ul>
+                                        <li>Most shopping mobile applications have a navigation bar</li>
+                                        <li>It is easy to view customer reviews, It’s not at the bottom of the page like Amazon</li>
+                                        <li>All the important information is at the top on the product page</li>
+                                        <li>Searches show products in grids, not lists</li>
+                                        <li>Filter button is accessible at the top</li>
+                                    </ul>
+
+                                </td>
+                            </tr>
+                          </table>
+                    <div class="img-container">
+                        <img src="images/survey.jpg" alt="survey notes" class="img">
+                    </div>
+                        <p><i>I wrote some recommendations to myself while looking at my survey results. The open ended questions really gave me a lot of insight on some of the biggest pain points.
+                        </i></p>
+                        
+                </div>
+
+             <div class="define">
+                <div class="img-container">
+                    <img src="images/phase2.png" alt="phase 2" class="phase-img">
+                </div>
+                    <h3>Define</h3>
+                    <h4><i>Identify users’ needs</i></h4>
+                    <p>From my research, I was able to create two personas, Jessica and Derek, to help me understand how I can help users like them achieve their goal in using the app.
+                    </p>
+                        <br><br>
+
+                        <h5>Persona 1: Jessica</h5>
+                    <div class="img-container">
+                        <img src="images/persona1.png" alt="persona 1" class="full-img">
+                    </div>
+                        <p>Some insights:
+                            <ul>
+                                <li>A dedicated search tab would help users like <b>Jessica</b> look at products in different departments, with deals specific to the category. </li>
+                                <li>Dark mode will reduce eye strain for users like <b>Jessica</b> who often browse in the dark. </li>
+                                <li>A dedicated Compare tab will allow users like <b>Jessica</b> to compare multiple products <i>of their choice</i> at once.</li>
+                            
+                            </ul>
+                        
+                        <h5>Persona 2: Derek</h5>
+                    <div class="img-container">
+                        <img src="images/persona2.png" alt="persona 2" class="full-img">
+                    </div>
+                        <p>Some insights:
+                            <ul>
+                                <li>Simplifying the home page will allow users like <b>Derek</b> to quickly search what he is looking for, without all the clutter.</li>
+                                <li>The ability to sort the search results by price or popularity will make things easier for users like <b>Derek.</b></li>
+                                <li>Larger buttons on the side menu will make it easier to navigate to certain pages (Your Order!), for users like <b>Derek</b> who constantly check and track orders.</li>
+                                <li>An obvious shortcut from the product page to the customer review section will save time for users like <b>Derek</b>, who always check reviews when ordering. </li>
+                            </ul>
+                        
+                            <br><br><br>
+                        <blockquote>"The reviews are sometimes a pain to have to scroll to. Would be nice if they had a shortcut."</blockquote>
+                        
+                        <i> Did you know that pressing the star rating in the current app takes you directly to the customer review section? Not many people know, because the stars are so small and it is not obvious that it is a clickable area.</i>
+
+
+
+                </div>
+
+            <div class="ideate">
+            <div class="img-container">
+                <img src="images/phase3.png" alt="phase 3" class="phase-img">
+            </div>
+                <h3>Ideate</h3>
+                
+                <h4><i>Generate ideas for design!</i></h4>
+            <div class="img-container">
+                <img src="images/flow.png" alt="chart" class="img">
+            </div>
+                <p>After scoping out various shopping apps, I sketched out some ideas that could solve pain points of Amazon’s users.
+                    <br><br>
+                <div class="img-container-4">
+                    <img src="images/sketchhome.jpg" alt="sketch home" class="img">
+                    <img src="images/sketchsearch.jpg" alt="sketch search" class="img">
+                    <img src="images/sketchproduct.jpg" alt="sketch product" class="img">
+                    <img src="images/sketchcompare.jpg" alt="sketch compare" class="img">
+                </div>
+            <h5>How I decided on the compare tab:</h5>
+                <br>
+                <p><i>(Skip this if you just want to see the final design!)</i></p>
+                <br>
+                <br>
+                <br>
+                <p>I had some ideas for how the compare tab should function…</p>
+                    <ul>
+                        <li>The first idea was to have two items show stacked on top of each other, each with vertical scrolling to view the item as you would on the product page (left image). This would allow users to view both items simultaneously. The downside was that you could only compare 2 items, maybe 3, until you run out of screen real estate. 
+                        </li>
+                        <li>The second idea was to have “tabs” of product pages, as you would on a browser (right image). This would allow you to view more information at once, without limiting the number of products to compare to 2 or 3. The downside to this was that you couldn’t view the comparing items simultaneously. </li>
+                        <li>The third idea that is not drawn out was to have the Home page search bar take you to the search results within the Home Tab. This meant that if you searched for another product in the Search Tab, you would see results in the Search Tab, while being able to tab back to the Home Tab to view what you searched there. I decided this would be redundant as a method to compare two products, as you would need to search for the same item twice in two different tabs.
+                        Below is the current comparison screen:</li>
+                    </ul>
+
+                    <br>
+                 <div class="img-container">
+                    <img src="images/currentcompare.png" alt="current compare" class="misc-img">
+                   
+                 </div>
+                    <p>So in the end, I decided on option 2. When comparing items, I don’t want to be limited to just 2 or 3 products. What if I can’t decide between 4? Or 5?  With this option, you can narrow down your options as you scroll through items all within the compare tab. Nothing will beat having multiple browsers on a desktop, but having the option to view multiple items at once on an app will improve the shopping experience for many.
+                    </p>
+            
+            
+
+
+            </div>
+
+            <div class="prototype">
+                 <div class="img-container">
+                <img src="images/phase4.png" alt="phase 4" class="phase-img">
+                </div>
+                <h3>Prototype</h3>
+                <h4><i>Transforming Ideas</i></h4>
+                    <h5>Experience #1: Home</h5>
+                <div class="img-container">
+                    <img src="images/homepage.png" alt="home page" class="full-img">
+                </div>
+                    <p><i>Instead of a side menu, I decided to use a pop out menu to put things more in reach and inserted big buttons for commonly used features, like “Your Orders.” People like the content on the home page (according to my survey), so I redesigned the layout in order to allow users to view more with minimal scrolling. The Dark Mode feature is also accessible here!
+                    </i></p>
+               
+                    <h5>Experience #2: Dark Mode</h5>
+                <div class="img-container">
+                    <img src="images/darkmode.png" alt="darkmode page" class="full-img">
+                </div>
+                    <p><i>The Dark Mode feature is easily accessible through the menu. The color is based off of Amazon’s color scheme and it will reduce strain on the eyes. This was the most requested feature from my survey.
+                    </i></p>   
+
+                    <h5>Experience #3: Searching</h5>
+                <div class="img-container">
+                    <img src="images/search.png" alt="search page" class="full-img">
+                </div>
+                    <p><i>Displaying products in grids with just the important information allows users to view more items at once. The dedicated search tab displays different categories for those who wish to shop by department, and includes a large button for the option to search by image, or scan (potentially increase online sales with increased discoverability!).
+                    </i></p>   
+
+                    <h5>Experience #4: Product Page</h5>
+                 <div class="img-container">
+                    <img src="images/productpage.png" alt="product page" class="full-img">
+                </div>
+                    <p><i>A cleaner interface of the product page with the most important information at the top! No more scrolling through “Frequently bought together,” “Related posts,” “Sponsored products related to this…,” before getting to the customer reviews. Buttons at the top for wishlist, compare, and share, which will stay as you scroll.
+                    </i></p>  
+
+                    <h5>Experience #5: Compare (NEW)</h5>
+                <div class="img-container">
+                    <img src="images/compare.png" alt="compare page" class="full-img">
+                </div>
+                    <p><i>You can’t open tabs on an app, and the comparing options in the app right now are based off of similar items. With the compare tab, you can pick the items you want to compare and view them side by side! Since Amazon sells all sorts of items, the generated compare charts do not always show the information you want to compare. This will be an alternative way to compare outside of Amazon’s compare chart within the app.
+                    </i></p>   
+
+
+            </div>
+
+            <div class="test">
+                <div class="img-container">
+                <img src="images/phase5.png" alt="phase 5" class="phase-img">
+            </div>
+                <h3>Test and Repeat</h3>
+                <h4><i>Evaluate and test</i></h4>
+
+                    <h5>Final Interview</h5>
+                    
+                    <p>With the interactive prototype and images, I asked users for their thoughts on my redesign.
+                        Here’s what people had to say:</p>
+                        
+                        <ul>
+                            <li>“ The app looks more modern and there is less clutter on the screen”
+                            </li>
+                            <li> “It actually looks smoother than the current amazon app, like way more cleaner and easier to use because of the layout. It’s minimalistic and I really like the dark mode“
+                            </li>
+                            <li>“It would be nice if amazon actually used this”
+                            </li>
+                            <li>“It looks more like amazon with their brand colors, and I like that there is a navigation bar”
+                            </li>
+                            <li>“It’s much less list-like and more block-like which allows me to see more”
+                            </li>
+                        </ul>
+                    
+
+                    <h5>What can I do better next time?</h5>
+                        <p>During the process, there were things I wish I had included in my interview and survey questions that would have helped me through design decisions. Next time- think about the process more in depth and the goals of the application or website in order to ask the right questions. 
+                        </p>
+
+                        <br><br>
+                        <p>
+                        I believe there’s always room for improvement, so I hope to make more interactive prototypes with different tools and develop more skills. 
+                        </p>
+                        <br><br>
+                        <p>
+                        To fellow designers and recruiters- if you have any feedback or want to connect, please feel free to reach out to me! 
+                        </p>
+                        <br><br><br><br>
+                        <p>Note: [Project Timeline] February - March 2020</p>
+                        <br><br><br>
+
+
+            </div>
+        </div>
+    </div>
+        </div>
+
+    <script>
+        
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jenny Hong Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>  
+    <div class="header">
+        <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+        <nav>
+            <a href="#" class="hide-desktop">
+                <img src="images/hammenu.png" alt="hamburgermenu"  class="menu" id="menu">
+            </a> 
+            <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.png" alt="exit menu"></li>
+                    <li><a href="index.html">WORKS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="grid-container">
+        <div class="sidebar-left"></div>
+        <div class="sidebar-right"></div>
+        <div class="main-content">
+            <div>
+                <section>
+                    <h6><b>Hi, I'm Jenny</b></h6>
+                    <p class="subhead">UI/UX Designer, Illustrator, and Graphic Designer.</p>
+                    <p class="subhead"><strong>Let's make the world easier to use.</strong></p>
+                </section>
+            </div>
+            <div>
+                <div class="container">
+                    <div class="space">
+                    <div class="work-item">
+                        <a href="amazon.html"><img class="img" src="images/amazon-img.png" alt="Amazon Case Study Image"></a>
+                        <span class="txt">
+                            <h2>Amazon.com Mobile App</h2>
+                            <p>the redesign it deserves</p>
+                        </span>
+                    </div> 
+                </div>
+                    <div class="space">
+                    <div class="work-item">
+                        <a href="portfolio.html"><img src="images/portfolio-img.png" alt="Website Design Photo"></a>
+                        <span>
+                            <h2>My Portfolio</h2>
+                            <p>a work of art in itself</p>
+                        </span>
+                    </div> 
+                </div>
+                <div class="space">
+                    <div class="work-item">
+                        <a href="uigallery.html"><img src="images/ui.png" alt="UI gallery"></a>
+                        <span>
+                            <h2>User Interface Designs</h2>
+                            <p>Exploring design and prototyping tools</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

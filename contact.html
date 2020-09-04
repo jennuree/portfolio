@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Jenny</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <div class="header">
+        <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+        <nav>
+            <a href="#" class="hide-desktop">
+                <img src="images/hammenu.png" alt="hamburgermenu"  class="menu" id="menu">
+            </a> 
+            <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.png" alt="exit menu"></li>
+                    <li><a href="index.html">WORKS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="grid-container">
+
+        <div class="sidebar-left"></div>
+        <div class="sidebar-right"></div>
+
+        <div class="main-content">
+        <div class="contact-txt">
+        <h2>Feel free to contact me for collaborations or just a friendly hello!<br>
+        
+        <br>    email: jennyh1019@hotmail.com</h2>
+         </div>
+    </div>
+    </div>
+</div>
+</div>
+    <script>
+        
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
