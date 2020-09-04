@@ -166,10 +166,12 @@ h6 {
 }
 .img {
     width: 70%;
+    height: auto;
  }
  .phase-img {
      width: 26%;
      margin-top: 5em;
+     height: auto;
  }
  .main-content ul {
     list-style-type: circle;
@@ -178,11 +180,13 @@ h6 {
 .full-img {
     width: 100%;
     padding-top: 1.5em;
+    height: auto;
 }
 
 .misc-img {
     width: 30%;
     margin-top: 3em;
+    height: auto;
 }
 
 
