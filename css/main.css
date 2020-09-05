@@ -165,11 +165,11 @@ h6 {
     flex-direction: column;
 }
 .img {
-    width: 70%;
+    size: 70%;
     height: auto;
  }
  .phase-img {
-     width: 26%;
+     size: 26%;
      margin-top: 5em;
      height: auto;
  }
@@ -184,7 +184,7 @@ h6 {
 }
 
 .misc-img {
-    width: 30%;
+    size: 30%;
     margin-top: 3em;
     height: auto;
 }
@@ -221,7 +221,7 @@ h6 {
     justify-content: flex-end;
 }
 .portrait-img {
-    width: 50%;
+    size: 50%;
     border-radius: 50%;
     padding: 5px 0;
 }
@@ -266,7 +266,7 @@ h6 {
         padding: 0;
     }
     .portrait-img {
-        width: 40%;
+        size: 40%;
         height: auto;
     }
     .portrait-container {
