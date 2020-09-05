@@ -217,7 +217,7 @@ h6 {
 .portrait-container {
     grid-area: p-img;
 
-    display: flex;
+ /*   display: flex; */
     justify-content: flex-end;
 }
 .portrait-img {
@@ -233,7 +233,7 @@ h6 {
     padding-top: 2em;
 }
 .about-emote-container {
-    display: flex;
+    /*display: flex; */
 
     justify-content: center;
     padding-top: 1em;
