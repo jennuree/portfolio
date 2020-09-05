@@ -267,7 +267,7 @@ h6 {
     }
     .portrait-img {
         width: 40%;
-        height; auto;
+        height: auto;
     }
     .portrait-container {
         justify-content: center;
