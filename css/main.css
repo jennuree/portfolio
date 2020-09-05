@@ -225,7 +225,7 @@ h6 {
     width: 50%;
     border-radius: 50%;
     padding: 5px 0;
-    align-self: center;
+    
 }
 .emote-txt{
     grid-area: emote;
@@ -270,10 +270,12 @@ h6 {
     .portrait-img {
         width: 40%;
         height: auto;
+        align-self: center;
     }
-    .portrait-container {
+    /* .portrait-container {
         justify-content: center;
     }
+    */
     .emote-txt {
         margin: 2em 3em;
         padding-top: 0;
