@@ -135,7 +135,7 @@ h6 {
     align-items: center;
 }
 .container img {
-    width: 100%;
+    size: 100%;
     display: flex;
 }
 .work-item a {
