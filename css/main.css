@@ -280,6 +280,9 @@ h6 {
         margin: 2em 3em;
         padding-top: 0;
     }
+    .img-container {
+        align-self: center;
+    }
 }
 /******** Desktop *********/
 @media only screen and (min-width: 1024px) {
